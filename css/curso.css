@@ -1,0 +1,53 @@
+.curso{
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+}
+
+.curso_label{
+margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.curso_label::after{
+     content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+.curso_content h3{
+    margin: 20px;
+    line-height: 1.5;
+}
+
+.curso_content h3 span{
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.curso_content p{
+    margin-bottom: 1rem;
+}
+
+.curso_content p :last-child{
+    margin-bottom: 0;
+}
+
+.citacao_amanda{
+    margin: 56px 0 0;
+    border: 1px solid var(--secondary-color) ;
+    padding: 40px;
+}
+
+.citacao_amanda h4{
+line-height: 1.5;
+font-style: italic;
+}
+
+.citacao_amanda p{
+    color: var(--secondary-color);
+    margin: 16px 0 0;
+}

@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Caladea";
+  src: url(../assets/fonts/Caladea-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: url(../assets/fonts/Caladea-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: url(../assets/fonts/Caladea-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: url(../assets/fonts/Caladea-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #382f1e;
+  --secondary-color: #aa8660;
+  --tertiary-color: #815433;
+  --background-color: #cabba6;
+  --background-secondary-color: #f7f3ed;
+  --text-primary-color: #1a1712;
+  --text-secondary-color: #ffffff;
+  --text-tertiary-color: #ede4d8;
+  --titles-weight: 700;
+  --text-weight: 400;
+  --meno-text-weight: 500;
+}
+
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 100px 50px;
+  
+}
+
+/* tipografia base — mobile primeiro */
+h1 {
+  font-family: Caladea;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  line-height: 1.2;
+}
+h2 {
+  font-family: Caladea;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+h3 {
+  font-family: Caladea;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+h4 {
+  font-family: Caladea;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 1.2;
+}
+p {
+  font-family: Caladea;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.profile_label {
+  display: flex;
+  align-items: center;
+  color: #aa8660;
+  margin: 0 0 24px;
+}
+
+a {
+  font-family: Caladea;
+  text-decoration: none;
+  color: var(--secondary-color);
+  letter-spacing: 0.1rem;
+}
+
+footer {
+  background-color: var(--text-primary-color);
+  color: var(--secondary-color);
+  padding: 40px 24px;
+  text-align: center;
+}
+
+footer p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.06rem;
+}
+
+footer p strong {
+  color: var(--text-tertiary-color);
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1.875rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+
+  .divisor {
+    height: 55px;
+    margin: 2rem auto;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+
+  .divisor {
+    height: 70px;
+    margin: 2.5rem auto;
+  }
+}
+
+.subs_button {
+  display: inline-block;
+  border: 1px solid var(--secondary-color);
+  padding: 16px 40px;
+  background-color: transparent;
+  letter-spacing: 0.15em;
+  font-size: 0.875rem;
+}
+
+.subs_button:hover {
+  background-color: #c9a84c;
+  color: #2c1a0e;
+  transition: all 0.3s ease;
+}
+
+.subs_button:active {
+  background-color: #c9a84c;
+  color: #2c1a0e;
+  transform: scale(0.97);
+  transition: all 0.15s ease;
+}
+
+.subs_button--escuro {
+  background-color: var(--tertiary-color);
+  color: var(--background-secondary-color);
+}
+
+.divisor {
+  width: 2px;
+  height: 60px;
+  background-color: var(--secondary-color);
+  opacity: 0.7;
+  margin: 3rem auto;
+}

@@ -1,0 +1,93 @@
+.hero {
+  background: var(--primary-color)
+    radial-gradient(ellipse at center, #3a2010 0%, #1c0f06 100%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 60px;
+  position: relative;
+  color: var(--text-secondary-color);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+
+.hero h1 span {
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+.hero p {
+  color: var(--sencodary-color);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+}
+
+.hero h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 0 1.5rem 1;
+}
+
+.hero a {
+  font-family: Caladea;
+  text-decoration: none;
+  color: var(--secondary-color);
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 120px 48px 80px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 1.125rem;
+  }
+
+  .hero h2 {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 200px 80px 160px;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+     margin-bottom: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 2.25rem;
+    max-width: 700px;
+    margin-bottom: 3.5rem;
+  }
+}

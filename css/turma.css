@@ -1,0 +1,26 @@
+.turma{
+    background-color: var(--text-tertiary-color);
+    display: block;
+    text-align: center;
+
+}
+
+.card-turma-numero{
+    font-size: 140px;
+    color: var(--secondary-color);
+
+}
+
+.card-turma h3{
+   margin: 0 0 32px;
+   line-height: 1.5;
+}
+
+.card-turma h3 span {
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.card-turma p{
+    color: var(--secondary-color);
+}

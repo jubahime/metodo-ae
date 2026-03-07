@@ -1,0 +1,72 @@
+.amanda {
+  background-color: var(--background-secondary-color);
+}
+
+.profile_pic {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+.amanda_name {
+  font-size: 36px;
+  margin: 0 0 32px;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+}
+
+.descricao_amanda p {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.citacao_final {
+  font-style: italic;
+  color: var(--tertiary-color);
+  border-bottom: 2px solid var(--text-tertiary-color);
+  border-top: 2px solid var(--text-tertiary-color);
+  padding: 32px 0;
+  margin: 40px 0;
+}
+.btn-wrapper {
+  text-align: center;
+  background-color: var;
+}
+
+.btn-wrapper .subs_button {
+}
+
+@media (min-width: 768px) {
+  .amanda_layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .profile_pic {
+    width: 45%;
+    max-width: none;
+    margin: 0;
+  }
+
+  .amanda_profile {
+    width: 55%;
+  }
+}
+
+.profile_label{
+margin-bottom:60px;
+}
+
+.profile_label::after{
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+.descricao_amanda p {
+  font-size: 16px;}

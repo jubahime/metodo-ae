@@ -1,0 +1,72 @@
+.identificacao{
+display: flex;
+  flex-direction: column;
+  background-color: var(--background-secondary-color);
+  color: var(--text-primary-color);
+  padding: 0 24px;
+}
+
+.identificacao_label{
+    font-family: Caladea;
+margin: 64px 0 0;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+
+.identificacao_label::after{
+    content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+
+.identificacao ul{
+    list-style: none;
+}
+
+.identificacao li::before {
+  content: "—";
+  color: var(--secondary-color);
+  margin-right: 0.75rem;
+  opacity: 0.9;
+}
+
+.identificacao li{
+    font-family: Caladea;
+    line-height: 1.5;
+    letter-spacing: 0.05rem;
+    text-align: left;
+border-bottom: 1px solid var(--secondary-color) ;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(170, 134, 96,
+ 0.3);
+  
+}
+.identificacao li:first-child {
+  border-top: 1px solid rgba(170, 134, 96, 0.3);
+}
+
+
+.card_identificacao{
+    border: solid;
+    background-color: var(--primary-color);
+    color: var(--text-secondary-color);
+    max-width: 600px;
+    width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.card_identificacao p{
+text-align: center;
+margin: 1rem;
+}
+
+.card_identificacao .destaque{
+    color: var(--secondary-color);
+}

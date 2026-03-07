@@ -1,0 +1,70 @@
+.diferenca{
+background-color: #ffffff;
+  color: var(--text-primary-color);
+  padding: 0 24px;
+}
+
+.diferenca_label{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.diferenca_label::after{
+    content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+.card_executa{
+    background-color: var(--primary-color);
+    padding: 40px;
+    text-align: left;
+}
+
+.card_executa h3{
+    text-align: left;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.card_executa p{
+    color: var(--text-secondary-color);
+}
+
+.card_domina{
+    background-color: var(--background-secondary-color);
+    padding: 40px;
+}
+
+.card_domina h3{
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.diferenca_footer{
+    margin: 40px;
+    text-align: center;
+}
+
+.diferenca h3 span{
+    color: var(--secondary-color);
+
+}
+
+@media (min-width: 768px){
+    .diferenca_footer{
+        margin: 100px;
+    }
+}
+
+@media (min-width: 1024px) {
+  .diferenca {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
