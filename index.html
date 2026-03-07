@@ -204,7 +204,7 @@
        <div class="modal-overlay" id="modal">
   <div class="modal-container">
    <button type="button" class="modal-fechar" id="modal-fechar">✕</button>
-   <form class="formulario" action="obrigado.html" method="GET">
+   <form class="formulario" action="inscricao.php" method="POST">
     
             <div class="formulario-header">
   <p class="formulario-label">INSCRIÇÃO</p>
@@ -283,23 +283,23 @@
   <label>O que mais te frustra no seu trabalho hoje?</label>
   <div class="opcoes">
     <label class="opcao-check">
-      <input type="checkbox" name="frustracao" value="durabilidade">
+      <input type="checkbox" name="frustracao[]" value="durabilidade">
       Durabilidade
     </label>
     <label class="opcao-check">
-      <input type="checkbox" name="frustracao" value="acabamento">
+      <input type="checkbox" name="frustracao[]" value="acabamento">
       Acabamento
     </label>
     <label class="opcao-check">
-      <input type="checkbox" name="frustracao" value="identificar-erro">
+      <input type="checkbox" name="frustracao[]" value="identificar-erro">
       Não sei identificar o erro
     </label>
     <label class="opcao-check">
-      <input type="checkbox" name="frustracao" value="identidade">
+      <input type="checkbox" name="frustracao[]" value="identidade">
       Falta de identidade no resultado
     </label>
     <label class="opcao-check">
-      <input type="checkbox" name="frustracao" value="varios">
+      <input type="checkbox" name="frustracao[]" value="varios">
       Mais de um desses
     </label>
   </div>
