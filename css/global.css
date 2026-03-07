@@ -176,6 +176,7 @@ footer p strong {
   background-color: transparent;
   letter-spacing: 0.15em;
   font-size: 0.875rem;
+  cursor: pointer;
 }
 
 .subs_button:hover {

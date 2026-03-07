@@ -6,3 +6,39 @@
 @import url(formato.css);
 @import url(turma.css);
 @import url(amanda.css);
+@import url(formato.css);
+@import url(formulario.css);
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  pointer-events: none; /* adiciona aqui */
+}
+
+.modal-overlay.ativo {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all; /* adiciona aqui */
+}
+
+.modal-container {
+  width: 90%;
+  max-width: 600px;
+  height: 85vh;
+  position: relative;
+  border: 1px solid rgba(170, 134, 96, 0.3);
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  overflow-y: overlay;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  pointer-events: all; /* adiciona aqui */
+}

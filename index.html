@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
+  
     <title>Método AE- Além da Execução</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
           Você aplica. Você entrega. <br />
           Mas lá no fundo, sabe que falta algo...
         </h2>
-        <a data-aos="fade-up" data-aos-delay="600" href="#" class="subs_button"
+        <a data-aos="fade-up" data-aos-delay="200" href="#" class="subs_button"
           >QUERO MINHA VAGA</a
         >
       </section>
@@ -200,9 +201,168 @@
         resultado.
       </p>
     </footer>
+       <div class="modal-overlay" id="modal">
+  <div class="modal-container">
+   <button type="button" class="modal-fechar" id="modal-fechar">✕</button>
+   <form class="formulario" action="obrigado.html" method="GET">
+    
+            <div class="formulario-header">
+  <p class="formulario-label">INSCRIÇÃO</p>
+  <h2>Método AE</h2>
+  <p class="formulario-subtitulo">Preencha com atenção — as respostas nos ajudam a entender seu momento e garantir a melhor experiência no curso.</p>
+</div>
+<div class="divisor-horizontal"></div>
+<div class="campo">
+  <label for="nome">Nome completo</label>
+  <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+</div>
+<div class="campo">
+  <label for="estado">Estado</label>
+  <select id="estado" name="estado" required>
+    <option value="">Selecione seu estado</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+  </select>
+</div>
+<div class="campo">
+  <label for="cidade">Cidade onde mora</label>
+  <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+</div>
+<div class="campo">
+  <label for="whatsapp">WhatsApp para contato</label>
+  <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+</div>
+<div class="campo">
+  <label for="experiencia">Há quanto tempo trabalha com extensão de cílios?</label>
+  <select id="experiencia" name="experiencia" required>
+    <option value="">Selecione uma opção</option>
+    <option value="menos-de-1-ano">Menos de 1 ano</option>
+    <option value="1-a-3-anos">1 a 3 anos</option>
+    <option value="mais-de-3-anos">Mais de 3 anos</option>
+  </select>
+</div>
+<div class="campo">
+  <label for="atuacao">Você trabalha de forma autônoma ou em salão?</label>
+  <select id="atuacao" name="atuacao" required>
+    <option value="">Selecione uma opção</option>
+    <option value="autonoma">Autônoma</option>
+    <option value="salao">Em salão ou espaço de terceiros</option>
+    <option value="nao-atende">Ainda não atendo clientes</option>
+  </select>
+</div>
+<div class="campo">
+  <label for="ultimo-curso">Qual foi o último curso que fez na área?</label>
+  <textarea id="ultimo-curso" name="ultimo-curso" placeholder="Ex: Curso de volume russo com a professora X" rows="3" required></textarea>
+</div>
+<div class="campo">
+  <label>O que mais te frustra no seu trabalho hoje?</label>
+  <div class="opcoes">
+    <label class="opcao-check">
+      <input type="checkbox" name="frustracao" value="durabilidade">
+      Durabilidade
+    </label>
+    <label class="opcao-check">
+      <input type="checkbox" name="frustracao" value="acabamento">
+      Acabamento
+    </label>
+    <label class="opcao-check">
+      <input type="checkbox" name="frustracao" value="identificar-erro">
+      Não sei identificar o erro
+    </label>
+    <label class="opcao-check">
+      <input type="checkbox" name="frustracao" value="identidade">
+      Falta de identidade no resultado
+    </label>
+    <label class="opcao-check">
+      <input type="checkbox" name="frustracao" value="varios">
+      Mais de um desses
+    </label>
+  </div>
+</div>
+<div class="campo">
+  <label for="traducao">Quando uma cliente descreve o resultado que quer, você consegue traduzir isso em técnica na hora do atendimento?</label>
+  <select id="traducao" name="traducao" required>
+    <option value="">Selecione uma opção</option>
+    <option value="sim-sempre">Sim, sempre</option>
+    <option value="as-vezes">Às vezes</option>
+    <option value="dificuldade">Tenho dificuldade com isso</option>
+  </select>
+</div>
+<div class="campo">
+  <label for="como-soube">Como ficou sabendo do curso?</label>
+  <select id="como-soube" name="como-soube" required>
+    <option value="">Selecione uma opção</option>
+    <option value="instagram">Instagram da Amanda</option>
+    <option value="indicacao">Indicação</option>
+    <option value="whatsapp">WhatsApp</option>
+    <option value="outro">Outro</option>
+  </select>
+</div>
+<button type="submit" class="subs_button btn-envio">GARANTIR MINHA VAGA</button>
+      </form>
+  </div>
+</div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script>
+  const modal = document.getElementById('modal');
+const botoes = document.querySelectorAll('.subs_button:not(.btn-envio)');
+const btnFechar = document.getElementById('modal-fechar');
+
+botoes.forEach(function(botao) {
+  botao.addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.classList.add('ativo');
+  });
+});
+ 
+btnFechar.addEventListener('click', function() {
+  modal.classList.remove('ativo');
+});
+
+modal.addEventListener('click', function(e) {
+  if (e.target === modal) {
+    modal.classList.remove('ativo');
+  }
+});
+
+const form = document.querySelector('.formulario');
+form.addEventListener('submit', function(e) {
+  const campoInvalido = form.querySelector(':invalid');
+  if (campoInvalido) {
+    e.preventDefault();
+    campoInvalido.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    campoInvalido.reportValidity();
+  }
+});
+</script>
+ 
   </body>
 </html>

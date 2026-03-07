@@ -1,0 +1,141 @@
+.formulario-page {
+  min-height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.formulario {
+  width: 100%;
+  max-width: 560px;
+  background-color: var(--primary-color);
+  border: 1px solid rgba(170, 134, 96, 0.3);
+  border-radius: 4px;
+  padding: 40px 32px;
+}
+.formulario-page {
+  font-family: "Caladea", serif;
+}
+.formulario-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.formulario-label {
+  color: var(--secondary-color);
+  font-size: 0.75rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.formulario-header h2 {
+  color: var(--text-secondary-color);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.formulario-subtitulo {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.divisor-horizontal {
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-color);
+  opacity: 0.7;
+  margin: 1.5rem auto;
+}
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.campo label {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  letter-spacing: 0.05rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(170, 134, 96, 0.4);
+  color: var(--text-secondary-color);
+  font-family: "Caladea", serif;
+  font-size: 1rem;
+  padding: 8px 0;
+  outline: none;
+  width: 100%;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-bottom-color: var(--secondary-color);
+}
+
+.campo textarea {
+  resize: none;
+}
+
+.campo select option {
+  background-color: var(--primary-color);
+  color: var(--text-secondary-color);
+}
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.opcao-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary-color);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.opcao-check input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--secondary-color);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+.formulario .subs_button {
+  color: var(--secondary-color);
+  font-family: "Caladea", serif;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.obrigado {
+  text-align: center;
+  max-width: 480px;
+}
+
+.obrigado h2 {
+  color: var(--text-secondary-color);
+  margin: 15px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
