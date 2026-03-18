@@ -33,7 +33,7 @@ $frustracaoTexto = implode(", ", $frustracao);
 // BLOCO 3 — ENVIAR PARA O GOOGLE SHEETS
 // ============================================
 
-$url = "https://script.google.com/macros/s/AKfycbyffD-qnRvDhjQ57-8OOiwJDeFC3PqogMfu7J_XtKSAko4cf5EcEMGbOnzrNvh244ws/exec";
+$url = "https://script.google.com/macros/s/AKfycbxKr2K5rf6KRrSUlGdibqjBNDSSm1RX_Ijbp3f2cL6Mnr7XGTNZRcrNeDNBZ-RrosOJ/exec";
 
 // Monta o objeto com todos os dados para enviar
 $dados = json_encode([
